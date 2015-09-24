@@ -67,16 +67,23 @@
     <h2 id="tabs-examples">IPTU devido por bairro em João Pessoa</h2>
  
   <div>
-<form action="http://transparencia.pub/cgi-sys/FormMail.cgi" method="post" name="form">
-Nome: <input type="text" name="nome">
-Conteúdo: <input type="text" name="conteudo">
-<input type="hidden" name="recipient" value="rommel@transparencia.pub">
-<input type="hidden" name="subject" value="titulo do email">
-<input type="hidden" name="redirect" value="http://seudominio.com.br/pagina_de_obrigado.html">
-<input type="submit" name="Submit" value="Enviar">
-</form>
-
-
+  <form action="enviaemail.asp" method="POST" class="form">
+  <p><br>
+    Nome:<br>
+    <input type="text" name="nome" size="24">
+    <br>
+    E-Mail:<br>
+    <input type="text" name="email" size="24">
+  </p>
+  <p><br>
+    Mensagem:<br>
+    <textarea name="mensagem" rows="6" cols="40"></textarea>
+    ;<br>
+    <input type="submit" name="Submit" value="Enviar">
+    <input type="submit" name="Submit2" value="Limpar">
+    <br>
+  </p>
+</form> 
    
   </div><!-- /example -->
 
